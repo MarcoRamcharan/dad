@@ -1,0 +1,136 @@
+.estates{
+    display: grid;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Combo', cursive;
+    background-color: azure;
+}
+
+.estates .one{
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:500px;
+    margin: 10px;
+}
+
+.estates .one img{
+    height: 60%;
+    width: 100%;
+}
+
+.estates .one .estate-info{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estates .estate-heading{
+    background-color: #151111;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Combo', cursive;
+}
+
+.estates .estate-para{
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Combo', cursive;
+}
+
+
+
+
+
+
+.estates .two{
+    display: flex;
+    flex-direction: column;
+    height:500px;
+    margin: 10px;
+}
+
+
+.estates .two .images-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.estates .two .images-top img{
+    height: 100%;
+    width: 50%;
+}
+
+.estates .two img{
+    height: 70%;
+    width: 100%;
+}
+
+
+.estates .three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    margin: 10px;
+}
+
+.estates .image-top{
+    height: 60%;
+    width: 100%;
+}
+
+.estates .image-btm{
+    height: 40%;
+    width: 100%;
+}
+
+
+@media(min-width: 760px){
+    .estates .one, .estates .two, .estates .three{
+        height: 100vh;
+    }
+}
+
+@media(min-width: 1024px){
+    .estates{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px;
+    }
+    .estates .one, .estates .two, .estates .three{
+        margin: 0px;
+    }
+    .estates .two .images-top{
+        margin-bottom: 0px;
+    }
+    .estates .one{
+        padding-right: 10px;
+    }
+    .estates .three{
+        padding-left: 10px;
+    }
+    .estates .estate-para{
+        font-size: 18px;
+    }
+    .estates .estate-heading{
+        font-size: 22px;
+    }
+}

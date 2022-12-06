@@ -1,0 +1,74 @@
+.developments{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Combo', cursive;
+    padding: 10px;
+}
+
+
+.devBox{
+    height: 100vh;
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.one-top{
+    height: 50%;
+}
+
+.dev-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 20%;
+}
+
+.dev-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 80%;
+    padding: 14px;
+}
+
+.one img{
+    height: 50%;
+}
+
+
+.two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.two img{
+    height: 50%;
+    width: 100%;
+}
+
+.three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.three img{
+    height: 50%;
+    width: 100%;
+}
+
+
+@media(min-width: 1024px){
+    .developments{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

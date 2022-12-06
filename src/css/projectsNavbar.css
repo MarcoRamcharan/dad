@@ -1,0 +1,84 @@
+.projectsNavbar{
+    padding: 20px;
+    background-color: #1a2421;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    position: sticky;
+    top:0px;
+    z-index: 20;
+    height: 10vh;
+}
+
+.projectsNavbar h3{
+    font-family: 'Combo', cursive;
+    font-size: 18px;
+}
+
+.projectsNavbar .links{
+    display: none;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.projectsNavbar .links a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.projectsNavbar a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+@media(min-width: 600px){
+    .projectsNavbar .links{
+        display: block;
+    }
+    .selectNavbar{
+        display: none;
+    }
+    #mobilebar{
+        display: none;
+    }
+}
+
+.selectNavbar{
+    display: none;
+}
+
+.selectNavbar select{
+    border: none;
+    background-color: black;
+    color: white;
+    outline: none;
+    font-size: 12px;
+    width: 125px;
+    padding:10px 0px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+}
+
+.mobilebar{
+    position: sticky;
+    top: 10vh;
+    padding: 7px 5px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobilebar a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}

@@ -1,0 +1,110 @@
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-box h4{
+    padding: 10px;
+    letter-spacing: 0.1rem;
+}
+
+.footer-box p{
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+.footer-top{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid red;
+}
+
+.footerNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footerNav div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerNav a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    color: dodgerblue;
+    display: block;
+}
+
+.footerNav a:hover{
+    color: green;
+}
+
+.footerContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.footerAddress{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.footerAddress p{
+    color: teal;
+    font-size: 15px;
+}
+
+.footer-btm{
+    padding:21px 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+@media(min-width: 760px){
+    .footer-top{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 30px;
+    }
+    .footer h4{
+        font-size: 24px;
+        letter-spacing: 0.2rem;
+    }
+    .two{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .three{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .footer-btm{
+        font-size: 16px;
+    }
+}

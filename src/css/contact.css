@@ -1,0 +1,103 @@
+.contact{
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+.contact-box-one{
+    background-color: whitesmoke;
+    margin: 10px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+    line-height: 1.2rem;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    margin-bottom: 0px;
+}
+
+.contact-box-one h1{
+    font-size: 20px;
+    margin-bottom: 19px;
+}
+
+.contact-box-one p{
+    font-size: 14px;
+}
+
+.contact-box-two{
+    letter-spacing: 0.2rem;
+    background-color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 0px;
+    margin: 10px;
+    margin-top: 0px;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+
+.contact-body h1{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.contact-body p{
+    font-size: 18px;
+}
+
+
+.icon{
+    font-size: 20px;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid black;
+}
+
+@media(min-width: 350px){
+    .contact-box-two{
+        border-left: 1px solid black;
+    }
+    .group{
+        width: 300px;
+    }
+}
+
+@media(min-width: 768px){
+    .contact-box-one h1{
+        font-size: 45px;
+        margin-bottom: 35px;
+    }
+    .contact-box-one p{
+        font-size: 24px;
+        line-height: 1.4rem;
+    }
+    .contact-body h1{
+        margin: 10px;
+        font-size: 34px;
+    }
+    .group{
+        width: 500px;
+    }
+    .contact-body p{
+        font-size: 26px;
+    }
+    
+    
+    .icon{
+        font-size: 30px;
+    }
+}

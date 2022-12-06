@@ -1,0 +1,249 @@
+.projects{
+    cursor: pointer;
+}
+
+
+.projects-top{
+    background-color: #b6fcd5;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+}
+
+.projects-top-headings{
+    font-family: 'Combo', cursive;
+}
+
+.project-heading h5{
+    font-size: 14px;
+}
+
+.projects-btm{
+    background-color:  #f0f8ff;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.projects-top a{
+    text-decoration: none;
+    background-color: #151111;
+    color: white;
+    padding: 5px 10px ;
+    border: 2px solid black;
+    transition: all 1s;
+    font-size: 14px;
+}
+
+.projects-top a:hover .arrow{
+    display: inline-block;
+}
+
+
+
+.project{
+    background-color: red;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    transition: all 1s;
+    height: 250px;
+    -moz-transition: background-size 1000 linear;
+    -o-transition: background-size 1000 linear;
+    -ms-transition: background-size 1000ms linear;
+    transition: background-size 1000ms linear;
+}
+
+.project-development{
+    background-image: url('../images/development-pic.png');
+    background-size: 140% 100%;
+}
+
+.project-residential{
+    background-image: url('../images/residential-pic.jpg');
+    background-size: 100%;
+}
+
+
+.project img{
+    height: 100%;
+    width: 100%;
+}
+
+.project-hotels{
+    background-image: url('../images/hotel-pic.jpg');
+    background-size: 100% 100%;
+}
+
+.project-estates{
+    background-image: url('../images/estate-pic.jpg');
+    background-size: 120%;
+}
+
+
+.project a{
+    background-color: black;
+    transition: all 1s;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+    font-weight: bold;
+    color: white;
+    padding:5px 13px;
+    transition: all 1s;
+    text-decoration: none;
+}
+
+.project a:hover{
+    background-color: darkorchid;
+}
+
+
+
+
+.text:hover{
+    background-color:#151111;
+    font-size: 21px;
+}
+
+
+
+.project:hover a{
+    opacity: 1;
+}
+
+
+.project-heading{
+    height: 10%;
+    background-color: black;
+    transition: all 1s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border-bottom-right-radius: 25%;
+}
+
+.project-heading-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+
+.project:hover {
+    background-size: 110% !important;
+  }
+
+.project-hotels:hover {
+    background-size: 110% 110% !important;
+  }
+
+.project-development:hover {
+    background-size: 150% 110%  !important;
+  }
+
+  .project-estates:hover {
+    background-size: 110%  !important;
+  }
+
+.arrow{
+    color: red;
+    margin: 2px 5px;
+    display: none;
+    transition: all 1s;
+}
+
+
+@media(min-width: 600px){
+    .project-top{
+        height: 13vh;
+    }
+}
+
+
+
+@media(min-width: 500px){
+    .project{
+        height: 300px;
+    }
+}
+
+@media(min-width: 501px){
+    .project{
+        height: 70vh;
+    }
+    .projects-top{
+        padding: 18px;
+    }
+}
+
+
+@media(min-width: 760px){
+    .project{
+        height: 90vh;
+    }
+}
+
+@media(min-width: 1024px){
+    .projects-top a{
+        padding: 10px 20px ;
+        font-size: 20px;
+    }
+    .projects-top-headings h5{
+        font-size: 30px;
+    }
+    .projects-btm{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .project-estates{
+        background-size: 140%;
+    }
+    .project-estates:hover {
+        background-size: 130%  !important;
+      }
+      .project{
+        height: 85vh;
+        margin: 30px;
+    }
+    .project-development{
+        grid-column: 1 /span 3;
+    }
+    
+    .project-residential{
+        grid-column: 4 /span 2;
+    }
+    
+    
+    .project img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .project-hotels{
+        grid-column: 1 /span 2;
+    }
+    
+    .project-estates{
+        grid-column: 3 /span 3;
+    }
+    .projects a{
+        padding: 10px 30px;
+    }
+}

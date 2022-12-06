@@ -1,0 +1,132 @@
+.navbar{
+    background-color: #1a2421;
+    color: white;
+    padding: 12px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    z-index: 2;
+}
+
+.navbar h5{
+    font-family: 'Combo', cursive;
+}
+
+
+.navbar .links{
+    font-family: 'Bebas Neue', cursive;
+    display: none;
+}
+
+.navbar .links a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+}
+
+.navbar .links a:hover{
+    color: dodgerblue;
+}
+
+
+
+.banner{
+    height: 50vh;
+    background-image: url('../images/header-pic.jpg');
+    background-size: 100% 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.para{
+    background-color: #151111;
+    border-bottom: 2px solid white;
+    display: none;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+    color: moccasin;
+}
+
+.para p{
+    padding: 10px;
+    font-size: 22px;
+}
+
+
+.mobile-para{
+    background-color:azure;
+    font-size: 14px;
+    padding: 20px 40px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+}
+
+.mobile-para p{
+    text-align: center;
+}
+
+.menu-icon{
+    cursor: pointer;
+}
+
+.menu-icon h2{
+    color: red;
+}
+
+.menu-icon h2:hover{
+    color: red;
+}
+
+@media(min-width: 1200px){
+    .para{
+        width: 80%;
+        font-size: 20px;
+    } 
+    .banner{
+        justify-content: flex-end;
+    }
+}
+
+
+@media(min-width: 600px){
+
+    .navbar .links{
+        display: block;
+    }
+    .navbar{
+        height: 10vh;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .para{
+        display: block;
+        margin: 48px;
+    }
+    .banner{
+        height: 90vh;
+        margin-top: 0px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .mobile-para{
+        display: none;
+    }
+    .navbar{
+        padding:20px;
+    }
+    .navbar h5{
+        font-size: 23px;
+    }
+}
