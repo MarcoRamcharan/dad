@@ -42,7 +42,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: grey;
 }
 
 
@@ -68,7 +68,7 @@ img{
 
 @media(min-width: 600px){
     .gallery-top{
-        top: 13vh;
+        top: 10vh;
     }
     
 }

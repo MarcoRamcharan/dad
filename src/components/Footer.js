@@ -1,13 +1,14 @@
 import '../css/footer.css'
 import {Link} from 'react-router-dom'
 
+
 const Footer = () => {
     return ( 
         <div className="footer">
             <div className="footer-top">
                 <div className="footer-box one">
                     <div className="footerNav">
-                        <div>
+                        <div style={{textAlign:'center'}}>
                             <Link to='/'>HOME</Link>
                             <Link to='/about'>ABOUT</Link>
                             <Link to='/contact'>CONTACT</Link>
